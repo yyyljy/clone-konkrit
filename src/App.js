@@ -2,17 +2,8 @@ import GlobalStyle from "./GlobalStyle";
 import styled from "styled-components";
 import Header from "@components/templates/Header";
 import Events from "@components/templates/Events";
-const TopBanner = styled.div`
-  width: 100%;
-  height: 400px;
-  background-color: green;
-`;
-
-const ItemsOnSale = styled.div`
-  width: 100%;
-  height: 394px;
-  background-color: blue;
-`;
+import TopBanner from "@components/templates/TopBanner";
+import ItemsOnSale from "@components/templates/ItemsOnSale";
 
 const OpenseaTopCollections = styled.div`
   width: 100%;
@@ -38,7 +29,7 @@ function App() {
     <>
       <GlobalStyle />
       <Header>헤더부분</Header>
-      <TopBanner>탑 배너</TopBanner>
+      <TopBanner />
       <Events />
       <ItemsOnSale>판매중인 아이템</ItemsOnSale>
       <OpenseaTopCollections>많이 거래된 컬렉션</OpenseaTopCollections>
