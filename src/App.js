@@ -4,12 +4,7 @@ import Header from "@components/templates/Header";
 import Events from "@components/templates/Events";
 import TopBanner from "@components/templates/TopBanner";
 import ItemsOnSale from "@components/templates/ItemsOnSale";
-
-const OpenseaTopCollections = styled.div`
-  width: 100%;
-  height: 648px;
-  background-color: dodgerblue;
-`;
+import OpenseaTopCollections from "@components/templates/OpenseaTopCollections";
 
 const OnBoarding = styled.div`
   width: 100%;

@@ -105,7 +105,7 @@ function Events() {
       </EventsTopWrapper>
       <EventCardsWrapper>
         {[1, 2, 3, 4].map((num) => (
-          <div>
+          <div key={num}>
             <EventCardWrapper>
               <CountDownWrapper>
                 <EachCountWrapper>
