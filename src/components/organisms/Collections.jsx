@@ -74,27 +74,7 @@ const PriceText = styled.span`
 `;
 
 export default function Collections() {
-  const [collections, setCollections] = useState({ openseaCollections: [] });
-  const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
-
-  useEffect(() => {
-    async function fetchCollections() {
-      setIsLoading(true);
-      setIsError(false);
-      try {
-        const results = await axios(
-          "http://localhost:3000/api/opensea-top-collections"
-        );
-        setCollections(results.data);
-        setIsLoading(false);
-      } catch {
-        setIsError(true);
-        setIsLoading(false);
-      }
-    }
-    fetchCollections();
-  }, []);
+  
 
   if (isLoading) {
     return <LoadingSpinner />;
