@@ -19,6 +19,7 @@ const OnBoardList = styled.ul`
 const OnBoardImage = styled.img`
   display: block;
   margin-bottom: 8px;
+  width: 100%;
 `;
 
 const OnBoardText = styled.span`

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import * as colors from "@styles/colors";
 const Container = styled.div`
   width: 100%;
@@ -13,11 +13,23 @@ const EventsTopWrapper = styled.div`
   justify-content: space-between;
 `;
 
+const shine = keyframes`
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 200%;
+  }
+`;
+
 const GradientSectionTitle = styled.span`
   font-size: 18px;
   font-weight: 700;
   background: ${colors.textGradient};
   background-clip: text;
+  background-size: 200% auto;
+  background-position: 200%;
+  animation: ${shine} 4s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
